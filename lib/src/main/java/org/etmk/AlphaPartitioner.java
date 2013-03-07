@@ -2,14 +2,14 @@ package org.etmk;
 
 import java.util.Comparator;
 
-public class AlphaPartitioner extends Partitioner<Character> {
+public class AlphaPartitioner extends Partitioner<String> {
 
 	public AlphaPartitioner() {
 		
-		super('A', 'Z', new Comparator<Character>() {
+		super("A", "Z",  new Comparator<String>() {
 
 			@Override
-			public int compare(Character o1, Character o2) {
+			public int compare(String o1, String o2) {
 				
 				return o1.compareTo(o2);
 			}

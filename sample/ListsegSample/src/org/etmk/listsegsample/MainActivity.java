@@ -39,8 +39,8 @@ public class MainActivity extends Activity {
 			super(objects, new AlphaIndexingValueSelector<Person>() {
 
 				@Override
-				public Character getIndexValue(Person person) {
-					return person.getLastName().charAt(0);  // grouping and indexing by last name
+				public String getIndexValue(Person person) {
+					return person.getLastName();  // grouping and indexing by last name
 				}
 			});
 		}
